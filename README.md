@@ -8,22 +8,14 @@ The ideal goal in the project is to design a system that can recognize the singe
 ##Method
 First we will try to use pure vocal data from existing online dataset, to make sure the feature extration and classification work properly without instrument. And then we will develop the vocal isolation for the mixed music, try to isolate the vocal sound before feature extraction and classification. 
 
-* Training and Testing Database
-
-We will used some classified data from [MedleyDB](http://medleydb.weebly.com) for the fist step. After implementing the vocal extraction part, we can input any music from any souce.
-* Feature Analysis with PGM(Piecewise Gaussian Modeling)
-
-Use PGM to extract the acoustic feature from singer.
-* Feature Classifier
-
-We will try to use two classifiers to see which has better performance. 
+* Training and Testing Database - We will used some classified data from [MedleyDB](http://medleydb.weebly.com) for the fist step. After implementing the vocal extraction part, we can input any music from any souce.
+* Feature Analysis with PGM(Piecewise Gaussian Modeling) - Use PGM to extract the acoustic feature from singer.
+* Feature Classifier - We will try to use two classifiers to see which has better performance. 
   * Muti Layer Perceptron
   * Decision Tree
-* Vocal Extraction
+* Vocal Extraction - We will develop a vocal isolation to attenuate the instrument sound but highlight the vocal sound before feeding the audio to the classifier.
 
-We will develop a vocal isolation to attenuate the instrument sound but highlight the vocal sound before feeding the audio to the classifier.
-
-Reference to: [Github: Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
+Vocal isolation reference to: [Github: Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
 
 ##Project Management
 ###week 1 (4/20): 
