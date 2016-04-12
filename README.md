@@ -14,8 +14,7 @@ First we will try to use pure vocal data from existing online dataset, to make s
   * Muti Layer Perceptron
   * Decision Tree
 * Vocal Extraction - We will develop a vocal isolation to attenuate the instrument sound but highlight the vocal sound before feeding the audio to the classifier.
-
-Vocal isolation reference to: [Github: Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
+	Vocal isolation reference to: [Github: Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
 
 ##Project Management
 ###week 1 (4/20): 
