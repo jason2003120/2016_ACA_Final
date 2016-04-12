@@ -2,11 +2,11 @@
 This is the final project for NYU 2016 spring course, EL9173 - Audio Content Analysis, by Cheng Hsun Lee and Bryan Cheng. The project is to detect and classify the singer's gender from the music.
 
 ##Background
-The ideal goal in the project is to design a system that can recognize the singer's gender from the music. Consider to analyze the vocal sound, the instrument source should be removed before the analysis. Use PGM (Piecewise Gaussian Modeling) to grasp the singer's voice feature and then implement the classification with Muti Layer Perceptron and Decision Tree classifier. 
+The ideal goal in the project is to design a system that can recognize the singer's gender from the music. Consider to analyze the vocal sound, the instrument source should be removed before the analysis. Use PGM (Piecewise Gaussian Modeling) to grasp the singer's voice feature and then implement the classification with Muti Layer Perceptron and Decision Tree classifier. Eventually, we hope our program can disdinquish the singer's gender from any music resource.
 
 
 ##Method
-First we will try to use pure vocal data from existing online dataset, to make sure the feature extration and classification work properly without instrument.And then we will develop the vocal isolation for the mixed music, try to isolate the vocal sound before feature extraction and classification.
+First we will try to use pure vocal data from existing online dataset, to make sure the feature extration and classification work properly without instrument. And then we will develop the vocal isolation for the mixed music, try to isolate the vocal sound before feature extraction and classification. 
 
 * Training and Testing Database
 We will used some classified data from [MedleyDB](http://medleydb.weebly.com) for the fist step. After implementing the vocal extraction part, we can input any music from any souce.
@@ -17,6 +17,8 @@ We will try to use two classifiers to see which has better performance.
   * Muti Layer Perceptron
   * Decision Tree
 * Vocal Extraction
+We will develop a vocal isolater to attenuate the instrument sound but highlight the vocal sound before feeding the audio to the classifier.
+
 Reference to: [Github: Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
 
 ##Project Management
