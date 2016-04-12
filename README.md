@@ -1,5 +1,5 @@
 #Vocal Gender Classifier
-This is the final project for EL9173 Selected Topics in Signal Processing: Audio Content Analysis, the project is to detect the singer's gender from the music.
+This is the final project for NYU EL9173 Selected Topics in Signal Processing: Audio Content Analysis, by Cheng Hsun Lee and Bryan Cheng. The project is to detect and classify the singer's gender from the music.
 
 ##Background
 The ideal goal in the project is to design a system that can recognize the singer's gender from the music. Consider to analyze the vocal sound, the instrument source should be removed before the analysis. Use PGM(Piecewise Gaussian Modeling) to grasp the singer's voice feature and then implement the classification with Muti Layer Perceptron and Decision Tree classifier. 
@@ -27,11 +27,15 @@ Develop the vocal extaction method in order to classify mixed music.
 ###week 3 (5/4) :
 Accuracy Improvement
 
+##Job Assignment
+Vocal extaction from mixed music: Bryan Cheng
+Feature Analysis and classification: Cheng Hsun Lee
+
 ##Conclusion
 Detecting the gender of a singer has several potential applications. For example, gender dependent models are more accurate than gender independent ones in automatic speech recognition. Second, in terms of multimedia indexing, gender distinguishing helps classify data and label it in gender, the Gender Classifier can improve the efficency by giving the sorting work to computer. Gender classification can also be applied to data mining to find special classification targets.
 
 ##Reference
-* reference paper: [VOICE-BASED GENDER IDENTIFICATION IN MULTIMEDIA APPLICATIONS - Hadi Harb, Liming Chen](https://pdfs.semanticscholar.org/35d6/b269c99d0c7a27641a7489c4f13ecd8d5181.pdf)
+* Reference paper: [VOICE-BASED GENDER IDENTIFICATION IN MULTIMEDIA APPLICATIONS - Hadi Harb, Liming Chen](https://pdfs.semanticscholar.org/35d6/b269c99d0c7a27641a7489c4f13ecd8d5181.pdf)
 
 * Mechine Learnging Tools: [WEKA](http://www.cs.waikato.ac.nz/ml/index.html)
 
