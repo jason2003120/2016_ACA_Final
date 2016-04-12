@@ -8,7 +8,7 @@ The ideal goal in the project is to design a system that can recognize the singe
 ##Method
 First we will try to use pure vocal data from existing online dataset, to make sure the feature extration and classification work properly without instrument.And then we will develop the vocal isolation for the mixed music, try to isolate the vocal sound before feature extraction and classification.
 
-* Training database
+* Training and Testing Database
 We will used some classified data from [MedleyDB](http://medleydb.weebly.com) for the fist step. After implementing the vocal extraction part, we can input any music from any souce.
 * Feature Analysis with PGM(Piecewise Gaussian Modeling)
 Use PGM to extract the acoustic feature from singer.
@@ -17,7 +17,7 @@ We will try to use two classifiers to see which has better performance.
   * Muti Layer Perceptron
   * Decision Tree
 * Vocal Extraction
-Reference to:[Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
+Reference to: [Teensy-Audio-Effect-Remove-Vocals](https://github.com/FrankBoesing/Teensy-Audio-Effect-Remove-Vocals)
 
 ##Project Management
 ###week 1 (4/20): 
@@ -31,9 +31,9 @@ Accuracy Improvement
 Detecting the gender of a singer has several potential applications. For example, gender dependent models are more accurate than gender independent ones in automatic speech recognition. Second, in terms of multimedia indexing, gender distinguishing helps classify data and label it in gender, the Gender Classifier can improve the efficency by giving the sorting work to computer. Gender classification can also be applied to data mining to find special classification targets.
 
 ##Reference
-* reference paper:[VOICE-BASED GENDER IDENTIFICATION IN MULTIMEDIA APPLICATIONS - Hadi Harb, Liming Chen](https://pdfs.semanticscholar.org/35d6/b269c99d0c7a27641a7489c4f13ecd8d5181.pdf)
+* reference paper: [VOICE-BASED GENDER IDENTIFICATION IN MULTIMEDIA APPLICATIONS - Hadi Harb, Liming Chen](https://pdfs.semanticscholar.org/35d6/b269c99d0c7a27641a7489c4f13ecd8d5181.pdf)
 
-* Mechine Learnging Tools:[WEKA](http://www.cs.waikato.ac.nz/ml/index.html)
+* Mechine Learnging Tools: [WEKA](http://www.cs.waikato.ac.nz/ml/index.html)
 
-* Audio Dateset:[MedleyDB](http://medleydb.weebly.com/)
+* Audio Dateset: [MedleyDB](http://medleydb.weebly.com/)
 
