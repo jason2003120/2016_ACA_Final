@@ -1,8 +1,8 @@
 #Vocal Gender Classifier
-This is the final project for NYU course, EL9173 - Audio Content Analysis, by Cheng Hsun Lee and Bryan Cheng.The project is to detect and classify the singer's gender from the music.
+This is the final project for NYU course, EL9173 - Audio Content Analysis, by Cheng Hsun Lee and Bryan Cheng. The project is to detect and classify the singer's gender from the music.
 
 ##Background
-The ideal goal in the project is to design a system that can recognize the singer's gender from the music. Consider to analyze the vocal sound, the instrument source should be removed before the analysis. Use PGM(Piecewise Gaussian Modeling) to grasp the singer's voice feature and then implement the classification with Muti Layer Perceptron and Decision Tree classifier. 
+The ideal goal in the project is to design a system that can recognize the singer's gender from the music. Consider to analyze the vocal sound, the instrument source should be removed before the analysis. Use PGM (Piecewise Gaussian Modeling) to grasp the singer's voice feature and then implement the classification with Muti Layer Perceptron and Decision Tree classifier. 
 
 
 ##Method
@@ -29,6 +29,7 @@ Accuracy Improvement
 
 ##Job Assignment
 Vocal extaction from mixed music: Bryan Cheng
+
 Feature Analysis and classification: Cheng Hsun Lee
 
 ##Conclusion
