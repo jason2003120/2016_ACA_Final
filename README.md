@@ -33,7 +33,7 @@ Feature Analysis and classification: Cheng Hsun Lee
 Presentation and Report: Bryan Cheng, Cheng Hsun Lee
 
 ##Conclusion
-Detecting the gender of a singer has several potential applications. For example, gender dependent models are more accurate than gender independent ones in automatic speech recognition. Second, in terms of multimedia indexing, gender distinguishing helps classify data and label it in gender, the Gender Classifier can improve the efficency by giving the sorting work to computer. Gender classification can also be applied to data mining to find special classification targets. This project implements the gender classifier, which can classify music from the gender of te vocals automatically. 
+Detecting the gender of a singer has several potential applications. For example, gender dependent models are more accurate than gender independent ones in automatic speech recognition. Second, in terms of multimedia indexing, gender distinguishing helps classify data and label it in gender, the Gender Classifier can improve the efficency by giving the sorting work to computer. Gender classification can also be applied to data mining to find special classification targets. This project implements the gender classifier, which can classify music from the gender of the vocals automatically. 
 
 ##Reference
 * Reference Paper: [VOICE-BASED GENDER IDENTIFICATION IN MULTIMEDIA APPLICATIONS - Hadi Harb, Liming Chen](https://pdfs.semanticscholar.org/35d6/b269c99d0c7a27641a7489c4f13ecd8d5181.pdf)
