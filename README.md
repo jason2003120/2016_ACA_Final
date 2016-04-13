@@ -11,8 +11,7 @@ First we will try to use pure vocal data from existing online dataset to make su
 
 * Training and Testing Database - We will use some classified data from [MedleyDB](http://medleydb.weebly.com) for the first dataset. After implementing the vocal extraction part, we can input any music from any souce.
 * Feature Analysis with PGM (Piecewise Gaussian Modeling) - Use PGM to extract the acoustic feature from singer.
-
-PGM (Piecewise Gaussian Modeling) : The PGM features capture the dynamics of the speech and the distribution of the energy in each frequency channel contained in a long
+    *PGM (Piecewise Gaussian Modeling) : The PGM features capture the dynamics of the speech and the distribution of the energy in each frequency channel contained in a long
 term window.
 * Feature Classifier - We will try to use two classifiers to see which has better performance. 
   * Muti Layer Perceptron
