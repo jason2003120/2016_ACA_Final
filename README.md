@@ -1,4 +1,5 @@
 #Vocal Gender Classifier
+### By Cheng Hsun Lee and Bryan Cheng
 Vocal Gender Classifier is a final project for EL9173 Selected Topics in Signal Processing: Audio Content Analysis. The goal of the project is to detect the singer's gender from instrumental mix source.
 
 ##Background
