@@ -1,13 +1,22 @@
 clear all;
 %%
-fpath = 'man_001.wav';
+% fpath = 'man_001.wav';
 
 params = struct('win_size',1024,'hop_size',512,'min_freq',86,'max_freq',4000,...
                 'num_mel_filts',40);
-[ x_t, fs, t ] = import_audio( fpath );
+            
+%% 
+% male sound
+data1 = get_feature('man_001',params,1);
+%%
+% female sound
+data2 = get_feature('female_001.wav',params,2);
+%%
+% create arff
+fname = 'feature_out';
+%%
+
+data = [data1 ; data2];
 
 %%
-[mfsc, fs_mfsc] = compute_mfsc(x_t,fs,params.win_size,params.hop_size,...
-                                    params.min_freq,params.max_freq,params.num_mel_filts);
-
-[u, sigma ] = compute_PGM( mfsc, t, fs, params.num_mel_filts);
+arffwrite(fname,data);
