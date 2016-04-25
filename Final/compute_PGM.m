@@ -1,4 +1,4 @@
-function [ u, sigma ] = compute_PGM( mfsc, t, fs, num_mel_filts  )
+    function [ u, sigma ] = compute_PGM( mfsc, t, fs, num_mel_filts  )
 %PGM Summary of this function goes here
 %   Detailed explanation goes here
 % given an  1 sec ITW
@@ -6,7 +6,7 @@ t_len = length(t);
 Xt_len = length(mfsc);
 sec = t_len / fs ;
 N = floor(sec);              
-T = floor( Xt_len / sec);
+T = floor( Xt_len / sec); % number of mfsc feature per second
 u = zeros(N,num_mel_filts);
 sigma = zeros(N,N);
 var = zeros(N,num_mel_filts);

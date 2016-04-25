@@ -82,7 +82,7 @@ h_norm(:,num_mel_filts) =  h(:,num_mel_filts) /  (2*sum(h(:,num_mel_filts))-1 );
 
 % power spectrum in dB
         
-mel_power = s.' * h;
+mel_power = s.' * h_norm;
 log_mel_power = 20*log(abs(mel_power));
 
 % nomalize the feature
