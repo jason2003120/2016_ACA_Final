@@ -99,7 +99,7 @@ t_len = length(t);
 
 sec = t_len / fs ;
 N = floor(sec);              
-T = floor( fs * ITW / win_size);   % number of mfsc feature in ITW second
+T = floor( fs * ITW / hop_size);   % number of mfsc feature in ITW second
 
 
 
@@ -108,7 +108,7 @@ u = zeros(N, num_mel_filts);
 norm_u =  zeros(N, num_mel_filts);
 % compute the mean vector
 for i = 1:N
-    Xt_vec = mfsc((i-1)*N +1:i*N,:);
+    Xt_vec = mfsc((i-1)*T +1:i*T,:);
     u(i,:) = 1/T * sum(Xt_vec);
 end
 
@@ -119,7 +119,7 @@ norm_s = zeros(N,num_mel_filts);
 % compute the variance vector
 for i = 1:N    
 l = 1;
-    for k = N*(i-1)+1:i*N 
+    for k = T*(i-1)+1:i*T 
     % var = vec(N*1) * vec(N*1)^T
     var = (mfsc(k,:)- u(i,:)).' * (mfsc(k,:)-u(i,:));
     

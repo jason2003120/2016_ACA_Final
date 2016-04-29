@@ -1,7 +1,5 @@
 clear all;
-% 0429 revise Xt_vec = mfsc((i-1)*T +1:i*T,:);
-% replace N by T
-% T = floor( fs * ITW / params.hop_size);
+
 %%
 start_time = 0;
 stop_time = 500;
@@ -51,7 +49,7 @@ norm_u =  zeros(N,params.num_mel_filts);
 % i = 500;
 for i = 1:N
 
-    Xt_vec = mfsc((i-1)*T +1:i*T,:);
+    Xt_vec = mfsc((i-1)*N +1:i*N,:);
     u(i,:) = 1/T * sum(Xt_vec);
 end
 
@@ -70,7 +68,7 @@ end
 % compute the variance vector
 for i = 1:N    
 l = 1;
-    for k = T*(i-1)+1:i*T 
+    for k = N*(i-1)+1:i*N 
     % var = vec(N*1) * vec(N*1)^T
     var = (mfsc(k,:)- u(i,:)).' * (mfsc(k,:)-u(i,:));
     
