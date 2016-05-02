@@ -130,10 +130,10 @@ l = 1;
 end
 
 % normalize with respective maximum
-for i = 1:size(u,1)
-    norm_u(i,:) = u(i,:) / max(u(i,:));
-    norm_s(i,:) = sigma(i,:) / max(sigma(i,:));
-end
+% for i = 1:size(u,1)
+%     norm_u(i,:) = u(i,:) / max(u(i,:));
+%     norm_s(i,:) = sigma(i,:) / max(sigma(i,:));
+% end
 
 % normalize feature vector sum to 1
 % for i = 1:size(u,1)
@@ -142,10 +142,10 @@ end
 % end
 
 % normalize with min and max
-% for i = 1:size(u,1)
-%     norm_u(i,:) = ( u(i,:) - min(u(i,:)) ) / ( max(u(i,:)) - min(u(i,:)) );
-%     norm_s(i,:) = ( sigma(i,:) - min(sigma(i,:)) ) / ( max(sigma(i,:)) - min(sigma(i,:)) );
-% end
+for i = 1:size(u,1)
+    norm_u(i,:) = ( u(i,:) - min(u(i,:)) ) / ( max(u(i,:)) - min(u(i,:)) );
+    norm_s(i,:) = ( sigma(i,:) - min(sigma(i,:)) ) / ( max(sigma(i,:)) - min(sigma(i,:)) );
+end
 
 
 

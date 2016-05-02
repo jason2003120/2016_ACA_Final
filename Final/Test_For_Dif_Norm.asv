@@ -49,7 +49,6 @@ data = [data1 ; data2];
 fname = 'train_feature_4_1_MNM';
 arffwrite(fname,data,acoustic_params);
 
-%%
 fpath1 = 'C:\Users\User\Desktop\audioset\male_005.wav';
 fpath2 = 'C:\Users\User\Desktop\audioset\female_005.wav';
 
