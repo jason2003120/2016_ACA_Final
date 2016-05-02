@@ -1,4 +1,4 @@
-function [ norm_u, norm_s ] = compute_PGM_New( x_t, fs, t, win_size, hop_size, ...
+function [ norm_u, norm_s ] = compute_PGM_MinNMax( x_t, fs, t, win_size, hop_size, ...
                                             min_freq, max_freq, num_mel_filts,ITW )
 % COMPUTE_PGM_NEW Summary of this function goes here
 
@@ -107,7 +107,7 @@ T = floor( fs * ITW / hop_size);   % number of mfsc feature in ITW second
 u = zeros(N, num_mel_filts);
 norm_u =  zeros(N, num_mel_filts);
 % compute the mean vector
-for i = 1:N
+for i = 1:floor(N/ITW)
     Xt_vec = mfsc((i-1)*T +1:i*T,:);
     u(i,:) = 1/T * sum(Xt_vec);
 end
@@ -117,7 +117,7 @@ var = zeros(num_mel_filts,num_mel_filts);
 sigma = zeros(N,num_mel_filts);
 norm_s = zeros(N,num_mel_filts);
 % compute the variance vector
-for i = 1:N    
+for i = 1:floor(N/ITW)    
 l = 1;
     for k = T*(i-1)+1:i*T 
     % var = vec(N*1) * vec(N*1)^T
@@ -130,10 +130,10 @@ l = 1;
 end
 
 % normalize with respective maximum
-% for i = 1:size(u,1)
-%     norm_u(i,:) = u(i,:) / max(u(i,:));
-%     norm_s(i,:) = sigma(i,:) / max(sigma(i,:));
-% end
+for i = 1:size(u,1)
+    norm_u(i,:) = u(i,:) / max(u(i,:));
+    norm_s(i,:) = sigma(i,:) / max(sigma(i,:));
+end
 
 % normalize feature vector sum to 1
 % for i = 1:size(u,1)
@@ -142,10 +142,11 @@ end
 % end
 
 % normalize with min and max
-for i = 1:size(u,1)
-    norm_u(i,:) = ( u(i,:) - min(u(i,:)) ) / ( max(u(i,:)) - min(u(i,:)) );
-    norm_s(i,:) = ( sigma(i,:) - min(sigma(i,:)) ) / ( max(sigma(i,:)) - min(sigma(i,:)) );
-end
+% for i = 1:size(u,1)
+%     norm_u(i,:) = ( u(i,:) - min(u(i,:)) ) / ( max(u(i,:)) - min(u(i,:)) );
+%     norm_s(i,:) = ( sigma(i,:) - min(sigma(i,:)) ) / ( max(sigma(i,:)) - min(sigma(i,:)) );
+% end
+
 
 
 end
