@@ -7,10 +7,10 @@ function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1,
 
 % function [ data_u,data_s ] = get_feature_acoustic( fpath, mfsc_params,label,start_time, stop_time )
 % male sound - label = 1
-[data1] = get_feature_acoustic(fpath1,acoustic_params,1,start_time_1,stop_time_1);
+[data1] = get_feature_acoustic_MinNMax(fpath1,acoustic_params,1,start_time_1,stop_time_1);
 
 % female sound - label = 2
-[data2]  = get_feature_acoustic(fpath2,acoustic_params,2, start_time_2 ,stop_time_2);
+[data2]  = get_feature_acoustic_MinNMax(fpath2,acoustic_params,2, start_time_2 ,stop_time_2);
 
 % create arff
 
