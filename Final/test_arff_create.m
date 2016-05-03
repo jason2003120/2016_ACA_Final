@@ -1,7 +1,7 @@
 clear all;
 %%
-fpath1 = 'C:\Users\User\Desktop\audioset\male_train.wav';
-fpath2 = 'C:\Users\User\Desktop\audioset\female_train.wav';
+fpath1 = 'C:\Users\User\Desktop\audioset\male_004.wav';
+fpath2 = 'C:\Users\User\Desktop\audioset\female_001.wav';
 acoustic_params = struct('win_size',512,'hop_size',256,'min_freq',40,'max_freq',6000,...
                 'num_mel_filts',26,'ITW',1);
              
@@ -9,13 +9,31 @@ acoustic_params = struct('win_size',512,'hop_size',256,'min_freq',40,'max_freq',
 
 % train_feature_duration
 start_time_1 = 0;
-stop_time_1 = 1000;
+stop_time_1 = 800;
 start_time_2 = 0;
-stop_time_2 = 1000;
-fname = 'train_feature_1000';
+stop_time_2 = 800;
+fname = 'train_feature_800';
 % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
 arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% train_feature_duration
+start_time_1 = 0;
+stop_time_1 = 600;
+start_time_2 = 0;
+stop_time_2 = 600;
+fname = 'train_feature_600';
+% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% train_feature_duration
+start_time_1 = 0;
+stop_time_1 = 400;
+start_time_2 = 0;
+stop_time_2 = 400;
+fname = 'train_feature_400';
+% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+
 %%
+% train_feature_duration
 start_time_1 = 0;
 stop_time_1 = 1200;
 start_time_2 = 0;
@@ -24,53 +42,78 @@ fname = 'train_feature_1200';
 % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
 arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 %%
+% train_feature_duration
 start_time_1 = 0;
-stop_time_1 = 1400;
+stop_time_1 = 1000;
 start_time_2 = 0;
-stop_time_2 = 1400;
-fname = 'train_feature_1400';
+stop_time_2 = 1000;
+fname = 'train_feature_1000';
+% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% train_feature_duration
+start_time_1 = 0;
+stop_time_1 = 200;
+start_time_2 = 0;
+stop_time_2 = 200;
+fname = 'train_feature_200';
 % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
 arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 %%
-start_time_1 = 0;
-stop_time_1 = 1600;
-start_time_2 = 0;
-stop_time_2 = 1600;
-fname = 'train_feature_1600';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
-%%
-start_time_1 = 0;
-stop_time_1 = 1800;
-start_time_2 = 0;
-stop_time_2 = 1800;
-fname = 'train_feature_1800';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
-%%
-start_time_1 = 0;
-stop_time_1 = 2000;
-start_time_2 = 0;
-stop_time_2 = 2000;
-fname = 'train_feature_2000';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
-%%
-start_time_1 = 0;
-stop_time_1 = 3000;
-start_time_2 = 0;
-stop_time_2 = 3000;
-fname = 'train_feature_3000';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
-%%
-start_time_1 = 0;
-stop_time_1 = 4000;
-start_time_2 = 0;
-stop_time_2 = 4000;
-fname = 'train_feature_4000';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% start_time_1 = 0;
+% stop_time_1 = 1200;
+% start_time_2 = 0;
+% stop_time_2 = 1200;
+% fname = 'train_feature_1200';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% %%
+% start_time_1 = 0;
+% stop_time_1 = 1400;
+% start_time_2 = 0;
+% stop_time_2 = 1400;
+% fname = 'train_feature_1400';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% %%
+% start_time_1 = 0;
+% stop_time_1 = 1600;
+% start_time_2 = 0;
+% stop_time_2 = 1600;
+% fname = 'train_feature_1600';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% %%
+% start_time_1 = 0;
+% stop_time_1 = 1800;
+% start_time_2 = 0;
+% stop_time_2 = 1800;
+% fname = 'train_feature_1800';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% %%
+% start_time_1 = 0;
+% stop_time_1 = 2000;
+% start_time_2 = 0;
+% stop_time_2 = 2000;
+% fname = 'train_feature_2000';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% %%
+% start_time_1 = 0;
+% stop_time_1 = 3000;
+% start_time_2 = 0;
+% stop_time_2 = 3000;
+% fname = 'train_feature_3000';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% %%
+% start_time_1 = 0;
+% stop_time_1 = 4000;
+% start_time_2 = 0;
+% stop_time_2 = 4000;
+% fname = 'train_feature_4000';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 
 
 fprintf('ok!!\n');
