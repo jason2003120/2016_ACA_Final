@@ -113,7 +113,7 @@ for i = 1:floor(N/ITW)
 end
 
 % compute the variance vector
-var = zeros(num_mel_filts,num_mel_filts);
+dia = zeros(T,num_mel_filts);
 sigma = zeros(N,num_mel_filts);
 norm_s = zeros(N,num_mel_filts);
 % compute the variance vector
@@ -121,12 +121,11 @@ for i = 1:floor(N/ITW)
 l = 1;
     for k = T*(i-1)+1:i*T 
     % var = vec(N*1) * vec(N*1)^T
-    var = (mfsc(k,:)- u(i,:)).' * (mfsc(k,:)-u(i,:));
-    
-    l = l + 1;
-    
+    var = (mfsc(k,:)- u(i,:)).' * (mfsc(k,:)-u(i,:));   
+    l = l + 1;    
+    dia(l,:) = diag(var);
     end
-    sigma(i,:) = 1/T * sum(var);
+    sigma(i,:) = 1/T * sum(dia);
 end
 
 % normalize with respective maximum

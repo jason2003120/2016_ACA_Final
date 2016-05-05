@@ -1,36 +1,36 @@
 clear all;
 %%
-fpath1 = 'C:\Users\User\Desktop\audioset\recut\man_001_new.wav';
-fpath2 = 'C:\Users\User\Desktop\audioset\recut\women_001_new.wav';
+fpath1 = '/Users/leechenghsun/Desktop/recut/man_001_new.wav';
+fpath2 = '/Users/leechenghsun/Desktop/recut/women_001_new.wav';
 acoustic_params = struct('win_size',512,'hop_size',256,'min_freq',40,'max_freq',6000,...
-                'num_mel_filts',30,'ITW',1.5);
+                'num_mel_filts',26,'ITW',1);
              
 %%
 
 % train_feature_duration
-start_time_1 = 0;
-stop_time_1 = 800;
-start_time_2 = 0;
-stop_time_2 = 800;
-fname = 'train_feature_800';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
-% train_feature_duration
-start_time_1 = 0;
-stop_time_1 = 600;
-start_time_2 = 0;
-stop_time_2 = 600;
-fname = 'train_feature_600';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
-% train_feature_duration
-start_time_1 = 0;
-stop_time_1 = 400;
-start_time_2 = 0;
-stop_time_2 = 400;
-fname = 'train_feature_400';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% start_time_1 = 0;
+% stop_time_1 = 800;
+% start_time_2 = 0;
+% stop_time_2 = 800;
+% fname = 'train_feature_800';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% % train_feature_duration
+% start_time_1 = 0;
+% stop_time_1 = 600;
+% start_time_2 = 0;
+% stop_time_2 = 600;
+% fname = 'train_feature_600';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% % train_feature_duration
+% start_time_1 = 0;
+% stop_time_1 = 400;
+% start_time_2 = 0;
+% stop_time_2 = 400;
+% fname = 'train_feature_400';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 
 %
 % train_feature_duration
@@ -51,13 +51,13 @@ fname = 'train_feature_1000';
 % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
 arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 % train_feature_duration
-start_time_1 = 0;
-stop_time_1 = 200;
-start_time_2 = 0;
-stop_time_2 = 200;
-fname = 'train_feature_200';
-% function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
-arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
+% start_time_1 = 0;
+% stop_time_1 = 200;
+% start_time_2 = 0;
+% stop_time_2 = 200;
+% fname = 'train_feature_200';
+% % function [] = arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  ) 
+% arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 %%
 % start_time_1 = 0;
 % stop_time_1 = 1200;
@@ -116,13 +116,13 @@ arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,s
 % arff_create( fname, fpath1, fpath2, acoustic_params, start_time_1, stop_time_1,start_time_2,stop_time_2  );
 
 
-
+%%
 
 
 % testing
 % test_feature_start_stop
-fpath3 = 'C:\Users\User\Desktop\audioset\recut\man_002_new.wav';
-fpath4 = 'C:\Users\User\Desktop\audioset\recut\women_002_new.wav';
+fpath3 = '/Users/leechenghsun/Desktop/recut/man_002_new.wav';
+fpath4 = '/Users/leechenghsun/Desktop/recut/women_002_new.wav';
 
 
 
