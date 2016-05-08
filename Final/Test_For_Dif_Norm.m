@@ -1,13 +1,16 @@
 clear all;
 %%
-acoustic_params = struct('win_size',1412,'hop_size',970,'min_freq',40,'max_freq',6000,...
+acoustic_params = struct('win_size',512,'hop_size',256,'min_freq',40,'max_freq',6000,...
                 'num_mel_filts',26,'ITW',1);
 % function [ data_u,data_s ] = get_feature_acoustic( fpath, mfsc_params,label,start_time, stop_time )
 % male sound - label = 1
 
 %%
-fpath1 = 'C:\Users\User\Desktop\audioset\man_001_new.wav';
-fpath2 = 'C:\Users\User\Desktop\audioset\women_001_new.wav';
+% fpath1 = 'C:\Users\User\Desktop\audioset\man_001_new.wav';
+% fpath2 = 'C:\Users\User\Desktop\audioset\women_001_new.wav';
+
+fpath1 = '/Users/leechenghsun/Desktop/recut/man_001_new';
+fpath2 = '/Users/leechenghsun/Desktop/recut/women_001_new';
 %%
 start_time_1 = 0;
 stop_time_1 = 200;
@@ -24,6 +27,7 @@ data = [data1 ; data2];
 fname = 'train_feature_200';
 arffwrite(fname,data,acoustic_params);
 
+%%
 %
 start_time_1 = 0;
 stop_time_1 = 400;
