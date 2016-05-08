@@ -17,7 +17,8 @@ noverlap = win_size - hop_size;
 % f_mel = hz2mel(f);
 min_mel_freq = hz2mel(min_freq);
 max_mel_freq = hz2mel(max_freq);
-p = length(f);
+p = length(f); 
+
 
 f_mel = hz2mel(f.');
 
