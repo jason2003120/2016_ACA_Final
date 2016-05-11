@@ -1,7 +1,7 @@
 clear all;
 %%
-fpath1 = 'C:\Users\User\Desktop\audioset\recut\man_001_new.wav';
-fpath2 = 'C:\Users\User\Desktop\audioset\recut\women_001_new.wav';
+fpath1 = '/Users/leechenghsun/Desktop/recut/man_001_new.wav';
+fpath2 = '/Users/leechenghsun/Desktop/recut/women_001_new.wav';
 acoustic_params = struct('win_size',1412,'hop_size',970,'min_freq',40,'max_freq',6000,...
                 'num_mel_filts',26,'ITW',1);
             

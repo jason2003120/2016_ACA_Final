@@ -2,8 +2,8 @@ clear all;
 %%
 fpath1 = '/Users/leechenghsun/Desktop/recut/man_001_new.wav';
 fpath2 = '/Users/leechenghsun/Desktop/recut/women_001_new.wav';
-acoustic_params = struct('win_size',512,'hop_size',256,'min_freq',40,'max_freq',6000,...
-                'num_mel_filts',26,'ITW',1);
+acoustic_params = struct('win_size',512,'hop_size',256,'min_freq',40,'max_freq',2500,...
+                'num_mel_filts',20,'ITW',1);
              
 %%
 
